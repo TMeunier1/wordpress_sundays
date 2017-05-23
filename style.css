@@ -55,22 +55,22 @@ main {
     margin: 1em 0;
     background-color: white;
     border: 1px solid lightgrey; }
-  main .buy a,
-  main .buy a:focus,
-  main .buy a:hover,
-  main .buy a:visited {
+  main .BUY a,
+  main .BUY a:focus,
+  main .BUY a:hover,
+  main .BUY a:visited {
     color: #a28f61;
     text-decoration: none; }
-  main .onsale a,
-  main .onsale a:focus,
-  main .onsale a:hover,
-  main .onsale a:visited {
+  main .ON a,
+  main .ON a:focus,
+  main .ON a:hover,
+  main .ON a:visited {
     color: orange;
     text-decoration: none; }
-  main .soldout a,
-  main .soldout a:focus,
-  main .soldout a:hover,
-  main .soldout a:visited {
+  main .SOLD a,
+  main .SOLD a:focus,
+  main .SOLD a:hover,
+  main .SOLD a:visited {
     color: grey;
     text-decoration: none; }
 

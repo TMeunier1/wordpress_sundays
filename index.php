@@ -13,18 +13,20 @@ get_header();
                 $args = array('post_type' => 'post',
                             'orderby'     => 'title',
                             'order'       => 'ASC',
-                            'posts_per_page' => 2);
+                            'posts_per_page' => 150);
                 $posts = get_posts($args);
                     foreach ($posts as $post) {
                         $category = get_the_category();
-                        $price = get_post_custom_values();
+                        $price = get_post_custom_values('Price');
                         ?>
                     <article class="<?php echo $category[0]->name; ?>">
                         <a href="#">
                             <img src="http://lorempixel.com/150/200/" alt="randompicture">
                             <h2><?php echo $category[0]->name; ?></h2>
                             <p><?php the_title();?></p>
-                            <p><?php echo $price ?></p>
+                            <?php foreach ($price as $value) { ?>
+                            <p><?php echo $value; ?></p>
+                            <?php }; ?>
                         </a>
                     </article>
                     <?php };
