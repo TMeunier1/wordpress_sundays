@@ -1,0 +1,205 @@
+/*
+Theme Name: Sundays
+Author: Le Grand Monarque
+Description: Don't know yet
+Version: 0.0001a
+*/
+
+
+* {
+  list-style-type: none; }
+
+.fa {
+  font-size: 1.5em;
+  display: inline-block; }
+
+header {
+  background-color: #281400;
+  color: white;
+  padding: 2em; }
+  header nav {
+    text-align: center;
+    margin: auto; }
+    header nav ul {
+      display: flex;
+      justify-content: space-around;
+      width: 25em;
+      margin: auto; }
+      header nav ul li a,
+      header nav ul li a:focus,
+      header nav ul li a:hover,
+      header nav ul li a:visited {
+        color: #c9c4bf;
+        text-decoration: none;
+        font-size: 2rem; }
+  header i {
+    color: #c9c4bf;
+    float: right; }
+  header #headerContent {
+    text-align: center;
+    padding: 20rem; }
+    header #headerContent h1,
+    header #headerContent h2 {
+      font-size: 5rem; }
+    header #headerContent button {
+      background-color: #a28f61;
+      padding: 1rem;
+      margin: 1em;
+      border-radius: 3px;
+      border: none;
+      width: 30rem; }
+
+main {
+  background-color: #F7F7F7; }
+  main article {
+    margin: 1em 0;
+    background-color: white;
+    border: 1px solid lightgrey; }
+  main .buy a,
+  main .buy a:focus,
+  main .buy a:hover,
+  main .buy a:visited {
+    color: #a28f61;
+    text-decoration: none; }
+  main .onsale a,
+  main .onsale a:focus,
+  main .onsale a:hover,
+  main .onsale a:visited {
+    color: orange;
+    text-decoration: none; }
+  main .soldout a,
+  main .soldout a:focus,
+  main .soldout a:hover,
+  main .soldout a:visited {
+    color: grey;
+    text-decoration: none; }
+
+footer {
+  background-color: #0f3e57; }
+  footer h3 {
+    color: white; }
+  footer ul {
+    padding: 0; }
+    footer ul li {
+      color: #c9c4bf; }
+      footer ul li p {
+        display: inline-block; }
+  footer a,
+  footer a:focus,
+  footer a:hover,
+  footer a:visited {
+    color: #c9c4bf;
+    text-decoration: none; }
+
+#mainpage {
+  text-align: center; }
+  #mainpage h2 {
+    margin: 0;
+    padding: 2em;
+    font-size: 3em; }
+  #mainpage section {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around; }
+  #mainpage a h2 {
+    font-size: 0.9em; }
+  #mainpage a p:first-of-type {
+    color: grey; }
+  #mainpage a p {
+    color: black;
+    font-size: 0.9em; }
+
+#product #descriproduct {
+  border-bottom: 1px solid black;
+  margin-bottom: 3em; }
+  #product #descriproduct img:not(.otherpic) {
+    margin-top: 2em; }
+  #product #descriproduct .otherpic {
+    margin-left: 1em;
+    margin: 1em 0 4em 1em; }
+#product #price {
+  margin-bottom: 3em;
+  text-align: center; }
+  #product #price span {
+    border: 1px solid black;
+    padding: 2em; }
+  #product #price p {
+    display: inline-block;
+    padding: 2em;
+    border: 1px solid black; }
+  #product #price a {
+    padding: 2em;
+    border: 1px solid black;
+    color: black;
+    background-color: green; }
+
+#panier section {
+  margin: 1em 0; }
+  #panier section h2 {
+    margin: 0 0 0.5em 0; }
+#panier #placeorder {
+  border-top: 1px solid black; }
+  #panier #placeorder span {
+    display: inline-block;
+    margin: 3em 2em;
+    padding: 1em;
+    border: 1px solid black; }
+  #panier #placeorder button {
+    background-color: green;
+    padding: 1em;
+    border: none;
+    border-radius: 3px; }
+
+@media screen and (max-width: 700px) {
+  header {
+    text-align: center; }
+    header nav {
+      margin: auto;
+      text-align: center; }
+      header nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
+        width: auto; }
+        header nav ul li {
+          width: 100%; }
+          header nav ul li a {
+            width: inherit; }
+    header .fa {
+      padding: 0;
+      float: none;
+      margin: 1em; }
+    header #headerContent {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      text-align: center;
+      padding: 0; }
+      header #headerContent button {
+        margin: auto;
+        padding: 1em; }
+
+  img {
+    width: 100%; }
+
+  .otherpic {
+    width: 12%; }
+
+  main section {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+
+  footer {
+    text-align: center; }
+
+  #product #price p {
+    margin: 0; }
+
+  #panier {
+    text-align: center; }
+    #panier #placeorder span {
+      margin: 0 3em; } }
