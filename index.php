@@ -16,20 +16,21 @@ get_header();
                             'posts_per_page' => 2);
                 $posts = get_posts($args);
                     foreach ($posts as $post) {
-                    ?>
-                        <article class="buy">
-                            <a href="#">
-                                <img src="http://lorempixel.com/150/200/" alt="randompicture">
-                                <h2><?php the_title();?></h2>
-                                <p><?php the_content();?></p>
-                                <p>$180.00</p>
-                            </a>
-                        </article>
+                        $category = get_the_category();
+                        $price = get_post_custom_values();
+                        ?>
+                    <article class="<?php echo $category[0]->name; ?>">
+                        <a href="#">
+                            <img src="http://lorempixel.com/150/200/" alt="randompicture">
+                            <h2><?php echo $category[0]->name; ?></h2>
+                            <p><?php the_title();?></p>
+                            <p><?php echo $price ?></p>
+                        </a>
+                    </article>
                     <?php };
             endif ?>
         </section>
     </main>
-
     <footer>
         <div class="container">
             <div class="row">
