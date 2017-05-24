@@ -1,4 +1,5 @@
-<footer>
+<?php wp_footer(); ?>
+<footer class="row">
     <section class="col-xs-12 col-md-3">
         <h3>Quick links</h3>
         <ul>
@@ -42,6 +43,4 @@
     </section>
 </footer>
 </body>
-
 </html>
-<?php wp_footer(); ?>

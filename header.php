@@ -24,18 +24,19 @@
     <!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <?php if (! is_page_template('post.php')):?>
+    <?php if (! is_page_template('product.php')):?>
     <header>
         <div class="container">
             <div class="row">
                 <nav>
                     <ul>
-                        <li><a href="<?php ?>">Catalog</a></li>
+                        <li><a href="<?php echo get_page_link(2);?>">Catalog</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Stores</a></li>
-                        <li><a href="<?php ?>">Blog</a></li>
+                        <li><a href="<?php echo get_page_link(33); ‎?>">Blog</a></li>
                     </ul>
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </nav>
@@ -51,5 +52,3 @@
         </div>
     </header>
 <?php endif;?>
-
-<?php wp_head(); ?>
