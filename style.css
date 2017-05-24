@@ -52,6 +52,7 @@ header {
 main {
   background-color: #F7F7F7; }
   main article {
+    /*width: 19%;*/
     margin: 1em 0;
     background-color: white;
     border: 1px solid lightgrey; }
@@ -74,8 +75,15 @@ main {
     color: grey;
     text-decoration: none; }
 
+main section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 footer {
-  background-color: #0f3e57; }
+  background-color: #0f3e57;
+    }
   footer h3 {
     color: white; }
   footer ul {

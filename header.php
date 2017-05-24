@@ -10,7 +10,7 @@
  */
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> >
+<html <?php language_attributes();?> >
 
 <head>
     <meta charset="utf-8">
@@ -19,22 +19,23 @@
     <link rel="stylesheet" href="static/external/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/external/bootstrap/dist/css/bootstrap.min.css">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <link rel="stylesheet" href="wp-content/themes/sundays/style.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/bootstrap/css/bootstrap.css">
     <!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
-	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <?php if (! is_page_template('post.php')):?>
     <header>
         <div class="container">
             <div class="row">
                 <nav>
                     <ul>
-                        <li><a href="#">Catalog</a></li>
+                        <li><a href="<?php ?>">Catalog</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Stores</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="<?php ?>">Blog</a></li>
                     </ul>
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </nav>
@@ -49,3 +50,6 @@
             </div>
         </div>
     </header>
+<?php endif;?>
+
+<?php wp_head(); ?>
